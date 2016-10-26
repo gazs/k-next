@@ -1,0 +1,13 @@
+{
+  "name": "k-next",
+  "version": "1.0.0",
+  "description": "kinja + nextjs",
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "next": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+		"start": "next"
+  }
+}
