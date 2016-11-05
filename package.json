@@ -4,7 +4,7 @@
   "description": "kinja + nextjs",
   "dependencies": {
     "isomorphic-fetch": "^2.2.1",
-    "next": "^1.0.0"
+    "next": "^1.1.0"
   },
   "devDependencies": {},
   "scripts": {

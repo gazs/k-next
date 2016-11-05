@@ -5,8 +5,8 @@ import fetch from 'isomorphic-fetch'
 
 
 export default class extends React.Component {
-	static async getInitialProps ({req}) {
-		const postId = req ? parse(req.url, true).query.id : '1788188438';
+	static async getInitialProps ({query}) {
+		const postId = query.id;
 		const res = await fetch(`https://api.kinja.com/api/core/post/${postId}/full`)
 		const json = await res.json()
 		return json.data;
@@ -14,7 +14,7 @@ export default class extends React.Component {
 	render () {
 		return (<div>
 			<Head>
-				<meta charset="utf8" />
+				<meta charSet="utf8" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css" />
 			</Head>
